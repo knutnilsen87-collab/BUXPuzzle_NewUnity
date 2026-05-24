@@ -1,0 +1,4 @@
+# bux_core_gameplay_validation_report
+
+- status: pass
+- generated_at: 2026-05-24 03.50.05

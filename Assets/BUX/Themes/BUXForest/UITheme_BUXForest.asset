@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2ca0a5c68b2514188fedda445fcb0e, type: 3}
+  m_Name: UITheme_BUXForest
+  m_EditorClassIdentifier: Assembly-CSharp::BUX.Themes.UIThemeConfig
+  DisplayFont: {fileID: 0}
+  BodyFont: {fileID: 0}
+  Primary: {r: 0.18, g: 0.45, b: 0.24, a: 1}
+  PrimaryDark: {r: 0.08, g: 0.24, b: 0.13, a: 1}
+  Accent: {r: 0.95, g: 0.69, b: 0.22, a: 1}
+  CardBackground: {r: 0.98, g: 0.94, b: 0.83, a: 1}
+  TextDark: {r: 0.12, g: 0.09, b: 0.05, a: 1}
+  TextLight: {r: 1, g: 1, b: 1, a: 1}
+  HudGoalPanel: {fileID: 21300000, guid: 5df9a3d98718083418f669b038758ab3, type: 3}
+  HudLevelPanel: {fileID: 21300000, guid: 7513e0e9acf7dc7468a06c01a229c285, type: 3}
+  HudMovesPanel: {fileID: 21300000, guid: 50a4f04fb30904e429e62cb293e7f6b4, type: 3}
+  HudScorePanel: {fileID: 21300000, guid: 1e06d8d86f5d06f49bdd5fc68dc98187, type: 3}
+  BoosterBarPanel: {fileID: 21300000, guid: a780d22e79c186c4aa76e83e9e597e58, type: 3}
+  PrimaryButton: {fileID: 21300000, guid: 9b8a4eb35d621b649978a4e81899e3ed, type: 3}
+  SecondaryButton: {fileID: 21300000, guid: 6406be002131e394ea0e3414248f11c5, type: 3}
+  DisabledButton: {fileID: 21300000, guid: cefdcc3b9e207fe4693ad270dcbaa828, type: 3}
+  CloseButton: {fileID: 21300000, guid: 4e70dc8abe076ec45b99934a1a88c351, type: 3}
+  LevelStartPopup: {fileID: 21300000, guid: 1553b7c5957062141afc97bb6206ad98, type: 3}
+  LevelCompletePopup: {fileID: 21300000, guid: fe8427f215a00aa4a964cde4c456937d, type: 3}
+  LevelFailedPopup: {fileID: 21300000, guid: 8ba1a0a5a95d31c41b3cec112d25a3fe, type: 3}
+  RewardPopup: {fileID: 21300000, guid: b29dee4e7f7fa6a46b462db9f0dbea6b, type: 3}
+  Icons:
+  - Id: coin
+    Sprite: {fileID: 21300000, guid: 0d96ed9f52f1ad74baee43628abbcf20, type: 3}
+  - Id: star
+    Sprite: {fileID: 21300000, guid: f01622aa9f050724fb3957d98739be37, type: 3}
+  - Id: trophy
+    Sprite: {fileID: 21300000, guid: c3981769e2aeb1e45bb60e3ff28eb903, type: 3}
+  - Id: honey_token
+    Sprite: {fileID: 21300000, guid: 54778b9880a574e44be06962abed1d2a, type: 3}
+  - Id: cosmetic_shard
+    Sprite: {fileID: 21300000, guid: b8836992f5c528149a484ea0a64c1c86, type: 3}
+  - Id: booster_fragment
+    Sprite: {fileID: 21300000, guid: 306f3f044fd64da4fbbdb522d0075258, type: 3}
+  - Id: key
+    Sprite: {fileID: 21300000, guid: 23684ed9ff328fd4a861e23e7377f7c2, type: 3}
+  - Id: heart_life
+    Sprite: {fileID: 21300000, guid: 60bd615787990ec478a87c6dfa97b44b, type: 3}

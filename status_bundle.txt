@@ -1,0 +1,416 @@
+﻿# STATUS BUNDLE
+# Project status handoff file for Codex / AI / developer continuation
+# This file must be updated after EVERY work round.
+
+================================================================================
+0. STATUS BUNDLE RULES
+================================================================================
+
+This file is the single source of truth for the current state of this Unity project root:
+- F:\prosjekter(MAIN)\BUXPuzzle_NewUnity
+
+There is also a sibling/source project root:
+- F:\prosjekter(MAIN)\BUXPuzzle
+
+Active rule from user:
+- `status_bundle.txt` must be filled out and/or updated in BOTH repo roots after every Codex run.
+- Each update must include what changed, validation state, remaining risks/blockers, and the next practical action.
+
+Do not remove older meaningful history unless explicitly instructed. Prefer adding the latest work round near the top of section 14.
+
+================================================================================
+1. PROJECT OVERVIEW
+================================================================================
+
+Project name:
+- BUX Puzzle NewUnity
+
+Project type:
+- Unity match-3 / connect-3 game project shell with BUX theme-pack architecture.
+
+Unity project root:
+- F:\prosjekter(MAIN)\BUXPuzzle_NewUnity
+
+Source/original project root:
+- F:\prosjekter(MAIN)\BUXPuzzle
+
+Unity version:
+- 6000.3.3f1
+
+Canonical BUX root:
+- Assets/BUX/
+
+Main technology stack:
+- Unity 6
+- C#
+- ScriptableObject-based theme configuration
+- PNG sprite assets
+- MP3/WAV audio assets
+- Editor validation/generation tools
+
+Production/spec sources:
+- F:\prosjekter(MAIN)\BUXPuzzle\nyeDocs\BUX_Puzzle_Full_Production_Spec_Aegis_Enhanced_v2_New_Unity_Project.zip
+- F:\prosjekter(MAIN)\BUXPuzzle\nyeDocs\BUX_Puzzle_High_Throughput_Codex_Override_Addendum_v1.md
+- F:\prosjekter(MAIN)\BUXPuzzle\Assets\BUX\Data\Manifests\Reports\BUX_Puzzle_Project_Package_Analysis_and_Structure_Addendum.md
+
+Core architecture rule:
+- Use one shared match-3 engine.
+- Use many theme packs.
+- Theme packs are data/assets/config only.
+- Theme packs must not fork gameplay rules, scoring, objectives, blockers, swaps, board legality, or solvability.
+
+================================================================================
+2. CURRENT PROJECT STATE SUMMARY
+================================================================================
+
+Overall status:
+- Foundation working / visually openable / not production-playable yet.
+
+Current phase:
+- New Unity shell + BUX root + BUXForest first theme pack + visible demo scene.
+
+Estimated completion:
+- Foundation/theme-pack setup: high confidence complete for headless validation.
+- Full playable production game: not complete.
+
+Short status summary:
+- A clean Unity project exists at F:\prosjekter(MAIN)\BUXPuzzle_NewUnity.
+- Assets/BUX has been copied/imported from the source project.
+- BUXForest is configured as the first theme pack.
+- A visible startup/demo scene exists at Assets/BUX/Scenes/BUXForestDemo.unity.
+- Unity can import/open the project and validate the BUX theme/core/skeleton tools headlessly.
+- The visible demo scene is presentation/bootstrap only; it is not yet the final integrated playable match-3 scene.
+
+Most important current issue:
+- The project now opens visually, but the BUX runtime foundation is not yet wired into a complete playable scene with input, match resolution UI, progression flow, result screens, and production level loading.
+
+Most important next action:
+- Build the real playable BUX game scene using the shared BoardEngine and active ThemeDefinition, replacing the visual-only demo board with runtime-driven board presentation.
+
+================================================================================
+3. PRODUCTION SPEC ALIGNMENT
+================================================================================
+
+Implemented according to spec:
+- Clean Unity project root created.
+- Assets/BUX is the canonical project root for BUX systems/assets.
+- One shared engine architecture is present under Assets/BUX/Runtime/Core.
+- Theme contracts exist under Assets/BUX/Themes/Shared.
+- BUXForest first theme pack exists under Assets/BUX/Themes/BUXForest.
+- ThemeCatalog exists under Assets/BUX/Data/ThemeCatalog.
+- Organized art/audio/data/review folders exist under Assets/BUX.
+- Manifests and reports exist under Assets/BUX/Data/Manifests.
+- Validation tooling exists under Assets/BUX/Editor.
+- A visible BUXForest scene exists and is in EditorBuildSettings.
+
+Partially implemented:
+- Match-3 runtime foundation exists, but not yet fully connected to a playable Unity scene.
+- Level catalog foundation exists, but production balancing/human tuning remains.
+- Reward/wallet/challenge/companion foundations exist, but full UX/game flow remains.
+- UI/audio/VFX theme config foundation exists, but final in-game wiring remains.
+
+Not implemented / not complete:
+- Final playable BUX match-3 loop in the new project.
+- Full scene flow: level start, gameplay, win/fail, rewards, map/progression.
+- Device QA/performance validation.
+- Android/iOS signing and app icon readiness.
+- Manual visual QA screenshots.
+
+================================================================================
+4. KEY PROJECT STRUCTURE
+================================================================================
+
+Open this scene first:
+- Assets/BUX/Scenes/BUXForestDemo.unity
+
+Important folders:
+- Assets/BUX/Runtime/Core/                    Shared match-3 engine foundation
+- Assets/BUX/Runtime/Levels/                  Level spec/catalog foundation
+- Assets/BUX/Runtime/Progression/             Wallet/reward foundation
+- Assets/BUX/Runtime/Services/                Same-board challenge foundation
+- Assets/BUX/Runtime/Gameplay/                Companion reaction queue foundation
+- Assets/BUX/Themes/Shared/                   Theme contracts/config classes
+- Assets/BUX/Themes/BUXForest/                First theme pack ScriptableObjects
+- Assets/BUX/Data/ThemeCatalog/               ThemeCatalog asset
+- Assets/BUX/Art/                             Organized PNG art library
+- Assets/BUX/Audio/                           Organized MP3/WAV audio library
+- Assets/BUX/Data/Manifests/                  Asset/audio/import/handoff reports
+- Assets/BUX/_Review/                         Preserved duplicates/unclear leftovers
+- Assets/BUX/Editor/AssetTools/               BUXForest theme generator
+- Assets/BUX/Editor/Import/                   Import settings applier
+- Assets/BUX/Editor/SceneTools/               BUXForest demo scene builder
+- Assets/BUX/Editor/Validation/               Theme/core/skeleton validators
+
+Important files:
+- Assets/BUX/Scenes/BUXForestDemo.unity
+- Assets/BUX/Runtime/Core/BoardEngine.cs
+- Assets/BUX/Themes/Shared/ThemeDefinition.cs
+- Assets/BUX/Themes/Shared/ThemeCatalog.cs
+- Assets/BUX/Themes/BUXForest/BUXForest.theme.asset
+- Assets/BUX/Themes/BUXForest/TileSet_BUXForest.asset
+- Assets/BUX/Themes/BUXForest/BoardTheme_BUXForest.asset
+- Assets/BUX/Themes/BUXForest/UITheme_BUXForest.asset
+- Assets/BUX/Themes/BUXForest/AudioTheme_BUXForest.asset
+- Assets/BUX/Themes/BUXForest/VfxTheme_BUXForest.asset
+- Assets/BUX/Data/ThemeCatalog/ThemeCatalog.asset
+- Assets/BUX/Data/Manifests/new_unity_project_developer_handoff.md
+- Assets/BUX/Data/Manifests/phase_execution_report.md
+
+================================================================================
+5. CURRENT INVENTORY
+================================================================================
+
+Inventory under Assets/BUX as of 2026-05-24 05:06 Europe/Oslo:
+- Total files: 1430
+- PNG files: 462
+- Audio files (.mp3/.wav): 133
+- C# files: 30
+- Unity .asset theme/config files: 7
+- Review-preserved files under Assets/BUX/_Review: 470
+
+Visible scene inventory:
+- Scene: Assets/BUX/Scenes/BUXForestDemo.unity
+- GameObjects: 113
+- SpriteRenderers: 107
+- Contains: camera, forest background, BUX logo, HUD panels, goal icon, wooden board frame, 7x7 tile board, companion bear, play button.
+
+================================================================================
+6. VALIDATION STATUS
+================================================================================
+
+Latest known headless validation results:
+- Unity clean project creation: pass
+- Assets/BUX copy/import: pass
+- Unity import/compile: pass
+- Import settings applier: pass, no changes required after copied .meta files
+- BUXForest theme generation: pass
+- Theme validation: pass, 0 failures, 0 warnings
+- Core gameplay validation: pass
+- Production skeleton validation: pass
+- BUXForest demo scene generation: pass
+- BUXForest demo scene import/re-open: pass
+
+Validation report files:
+- theme_validation_report.txt
+- bux_core_gameplay_validation_report.txt
+- bux_production_skeleton_validation_report.txt
+
+Important validation logs in source/original Logs folder:
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_compile.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_apply_import_settings.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_generate_buxforest.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_theme_validation.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_core_gameplay_validation.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_production_skeleton_validation.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_build_buxforest_demo_scene_retry.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_final_demo_scene_validate.log
+- F:\prosjekter(MAIN)\BUXPuzzle\Logs\codex_newunity_final_after_visible_scene_reports.log
+
+Known validation limitation:
+- Headless Unity validation proves import/compile/tool execution, but does not prove final visual quality, gameplay fun, device performance, store readiness, or production level balance.
+
+================================================================================
+7. WHAT CHANGED IN THIS PROJECT SO FAR
+================================================================================
+
+Major completed work:
+- Created clean Unity project at F:\prosjekter(MAIN)\BUXPuzzle_NewUnity.
+- Copied canonical Assets/BUX from the source project.
+- Generated/refreshed BUXForest theme ScriptableObjects.
+- Created/validated ThemeCatalog.
+- Added BUXForestDemo scene so the project no longer opens as an empty default scene.
+- Set Assets/BUX/Scenes/BUXForestDemo.unity as enabled build scene.
+- Added editor tool BUXForestDemoSceneBuilder.cs to regenerate the visible scene.
+- Added/updated handoff reports in Assets/BUX/Data/Manifests.
+- Updated this status bundle to replace placeholder template content with real project status.
+
+Files/folders touched in this new project:
+- status_bundle.txt
+- ProjectSettings/EditorBuildSettings.asset
+- Assets/BUX/Scenes/BUXForestDemo.unity
+- Assets/BUX/Scenes/BUXForestDemo.unity.meta
+- Assets/BUX/Editor/SceneTools/BUXForestDemoSceneBuilder.cs
+- Assets/BUX/Editor/SceneTools/BUXForestDemoSceneBuilder.cs.meta
+- Assets/BUX/Data/Manifests/new_unity_project_developer_handoff.md
+- Assets/BUX/Data/Manifests/phase_execution_report.md
+
+================================================================================
+8. KNOWN RISKS / BLOCKERS
+================================================================================
+
+Risk/blocker 1:
+- The current visible scene is a demo/bootstrap scene, not the complete playable game scene.
+
+Risk/blocker 2:
+- Production levels are foundation/generated and still need human balancing and tuning.
+
+Risk/blocker 3:
+- Manual screenshot QA has not been completed in the Unity Editor/device view.
+
+Risk/blocker 4:
+- Android signing is not configured.
+
+Risk/blocker 5:
+- iOS app icons/signing are not configured.
+
+Risk/blocker 6:
+- Full device performance validation has not been run.
+
+Risk/blocker 7:
+- This new project root is not currently a git repository by itself. Source history is in the original repo root unless the developer initializes/separates version control intentionally.
+
+================================================================================
+9. NEXT DEVELOPMENT PLAN
+================================================================================
+
+Next phase recommendation:
+- Convert from visual demo scene to playable BUX scene.
+
+Concrete next tasks:
+1. Create runtime GameRoot/Bootstrap under Assets/BUX/Runtime that loads ThemeCatalog.DefaultTheme.
+2. Build a board presenter that reads BoardEngine state and displays theme tile sprites.
+3. Replace static demo tiles in BUXForestDemo with runtime-created board cells/tiles.
+4. Add basic input: select, swap, validate, resolve, refill.
+5. Connect objective/moves/score HUD to runtime state.
+6. Load BUXLevelSpec from BUXLaunchLevelCatalog.
+7. Add win/fail flow and result popup placeholders using BUX UI assets.
+8. Add audio hooks through AudioThemeConfig.
+9. Add screenshot/manual visual QA checklist to Manifests.
+10. Run Unity compile, theme validation, core gameplay validation, skeleton validation, and scene-open validation again.
+
+Do not do next:
+- Do not fork BoardEngine per theme.
+- Do not put gameplay rules inside theme assets.
+- Do not delete _Review assets unless explicitly approved.
+- Do not modify secrets, credentials, build signing, project settings, or production configs without explicit approval.
+
+================================================================================
+10. HOW TO OPEN / VERIFY MANUALLY
+================================================================================
+
+Manual open steps:
+1. Open Unity Hub.
+2. Open project: F:\prosjekter(MAIN)\BUXPuzzle_NewUnity
+3. In Project panel, open: Assets/BUX/Scenes/BUXForestDemo.unity
+4. Press Play or view Game tab.
+
+Expected visual result:
+- Forest background visible.
+- BUX Puzzle logo visible near top.
+- HUD panels visible.
+- Wooden board frame visible.
+- 7x7 board with BUX tile sprites visible.
+- Companion bear visible.
+- Play button visible.
+
+If Game view still looks empty:
+- Confirm the open scene is Assets/BUX/Scenes/BUXForestDemo.unity and not Untitled/default scene.
+- Let Unity finish asset import/reload.
+- Check Console for scene/YAML/import errors.
+- Re-run the editor menu item: BUX/Scenes/Build BUX Forest Demo Scene.
+
+================================================================================
+11. COMMANDS / UNITY ENTRY POINTS
+================================================================================
+
+Unity executable:
+- C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
+
+Useful editor executeMethods:
+- BUX.Editor.AssetTools.BUXForestThemeAssetGenerator.GenerateAndExit
+- BUX.Editor.Import.BUXAssetImportSettingsApplier.ApplyAndExit
+- BUX.Editor.Validation.BUXThemeValidation.RunThemeValidationAndExit
+- BUX.Editor.Validation.BUXCoreGameplayValidation.RunAndExit
+- BUX.Editor.Validation.BUXProductionSkeletonValidation.RunAndExit
+- BUX.Editor.SceneTools.BUXForestDemoSceneBuilder.BuildSceneAndExit
+
+Recommended PowerShell pattern:
+- Use Start-Process -Wait -PassThru with quoted -projectPath and -logFile.
+- Directly invoking Unity with & may return too early because Unity is a GUI application.
+
+================================================================================
+12. REPORTS / HANDOFF FILES
+================================================================================
+
+Primary developer handoff:
+- Assets/BUX/Data/Manifests/new_unity_project_developer_handoff.md
+
+Phase execution report:
+- Assets/BUX/Data/Manifests/phase_execution_report.md
+
+Asset/audio import reports:
+- Assets/BUX/Data/Manifests/asset_manifest.csv
+- Assets/BUX/Data/Manifests/audio_manifest.csv
+- Assets/BUX/Data/Manifests/import_summary.md
+- Assets/BUX/Data/Manifests/missing_assets_report.md
+- Assets/BUX/Data/Manifests/duplicates_report.md
+- Assets/BUX/Data/Manifests/developer_folder_overview.md
+
+Validation reports:
+- theme_validation_report.txt
+- bux_core_gameplay_validation_report.txt
+- bux_production_skeleton_validation_report.txt
+
+================================================================================
+13. AI / DEVELOPER INSTRUCTIONS
+================================================================================
+
+When continuing work:
+- Read this status bundle first.
+- Read Assets/BUX/Data/Manifests/new_unity_project_developer_handoff.md.
+- Read Assets/BUX/Data/Manifests/phase_execution_report.md.
+- Preserve the one-engine/many-theme-packs architecture.
+- Update this file after each run.
+- Also update F:\prosjekter(MAIN)\BUXPuzzle\status_bundle.txt after each run.
+- Validate with Unity after code/scene/import changes when possible.
+- Be explicit about what is headless-validated and what still requires manual visual/device QA.
+
+================================================================================
+14. WORK ROUND LOG
+================================================================================
+
+## 2026-05-24 05:18 Europe/Oslo - github_publish_prepared
+- Request: User asked to push this NewUnity project to https://github.com/knutnilsen87-collab/BUXPuzzle_NewUnity.git.
+- Change: Added Unity-safe .gitignore and .gitattributes before initializing git so generated folders such as Library, Temp, Logs, Obj, Build, Builds, and UserSettings are not committed.
+- Files changed:
+  - .gitignore
+  - .gitattributes
+  - status_bundle.txt
+- Validation before commit:
+  - gh CLI is not installed, so no PR creation via GitHub CLI will be attempted.
+  - git ls-remote reached the GitHub remote and returned no refs, consistent with an empty/new remote.
+  - Largest discovered file was below GitHub's 100 MB per-file hard limit during preflight scan.
+- Next action in this run: initialize git, commit intended project files, push branch main to GitHub, then update both status bundles.
+
+## 2026-05-24 05:06 Europe/Oslo - status_bundle_filled_out
+- Request: User asked to fill out F:\prosjekter(MAIN)\BUXPuzzle_NewUnity\status_bundle.txt.
+- Change: Replaced placeholder-style status content with a concrete project handoff/status bundle for the new Unity project.
+- Files changed:
+  - F:\prosjekter(MAIN)\BUXPuzzle_NewUnity\status_bundle.txt
+  - F:\prosjekter(MAIN)\BUXPuzzle\status_bundle.txt will also receive a short run note, because both roots must be updated after each run.
+- Validation:
+  - Confirmed project root exists.
+  - Confirmed Assets/BUX exists.
+  - Confirmed BUXForestDemo scene exists.
+  - Confirmed ProjectVersion uses Unity 6000.3.3f1.
+  - Confirmed Theme/Core/Production validation reports show pass.
+  - Confirmed EditorBuildSettings points to Assets/BUX/Scenes/BUXForestDemo.unity.
+- No Unity batchmode run was required for this status-documentation-only update.
+- Remaining:
+  - Continue with playable scene/runtime integration next.
+
+## 2026-05-24 04:12 Europe/Oslo - visible_scene_fix_completed_and_validated
+- Issue resolved: The new Unity project no longer only has an empty/default scene.
+- Added/validated scene: Assets/BUX/Scenes/BUXForestDemo.unity.
+- Scene content: visible BUXForest background, logo, HUD, board, tiles, companion bear, and play button.
+- Validation: Unity batchmode import/compile exited 0 with no compiler, scene-load, YAML, fatal, or unhandled-exception patterns.
+
+## 2026-05-24 03:56 Europe/Oslo - all_theme_pack_phases_completed_and_tested_headlessly
+- Completed 9 planned foundation phases in the clean Unity project.
+- Created new Unity shell, copied Assets/BUX, generated BUXForest theme assets, ran automated validations, and created handoff reports.
+- Remaining non-headless work: manual visual QA, device performance, signing/icons, and human level balancing.
+
+## 2026-05-24 03:39 Europe/Oslo - new_unity_project_shell_created
+- Created clean Unity project at F:\prosjekter(MAIN)\BUXPuzzle_NewUnity using Unity 6000.3.3f1 batchmode.
+- Existing source project at F:\prosjekter(MAIN)\BUXPuzzle preserved.
+

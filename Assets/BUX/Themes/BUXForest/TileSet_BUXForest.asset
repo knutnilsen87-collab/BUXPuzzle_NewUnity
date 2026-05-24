@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 141ee81597f5a4942807765cb19aa7d5, type: 3}
+  m_Name: TileSet_BUXForest
+  m_EditorClassIdentifier: Assembly-CSharp::BUX.Themes.TileSetConfig
+  CoreTiles:
+  - Id: red_berry
+    Sprite: {fileID: 21300000, guid: ed4d20bbe177cea49afeea009584a366, type: 3}
+  - Id: blueberry
+    Sprite: {fileID: 21300000, guid: 480007360d8327740916fb0c1c227195, type: 3}
+  - Id: green_leaf
+    Sprite: {fileID: 21300000, guid: 503b2966cce475f498715e60171e0608, type: 3}
+  - Id: pink_flower
+    Sprite: {fileID: 21300000, guid: 9129749086e50ed4a9276a8b25c01950, type: 3}
+  - Id: white_daisy
+    Sprite: {fileID: 21300000, guid: 5cca4efd1b043e64a947e7a1f0f2e18b, type: 3}
+  - Id: mushroom
+    Sprite: {fileID: 21300000, guid: 75af689696ff3e440acd5c959fbb285e, type: 3}
+  - Id: acorn
+    Sprite: {fileID: 21300000, guid: b5658093825d2b64497ddcc1e2030eea, type: 3}
+  - Id: bear_head
+    Sprite: {fileID: 21300000, guid: 9de3c2256ddef9b45bcaa9d72acbb572, type: 3}
+  - Id: bee
+    Sprite: {fileID: 21300000, guid: 40f513c439512654f83cd905f2ed9ed9, type: 3}
+  SpecialTiles:
+  - Id: berry_bomb
+    Sprite: {fileID: 21300000, guid: 448c6d54f9a9f4548870db0623cf612b, type: 3}
+  - Id: striped_berry_rocket
+    Sprite: {fileID: 21300000, guid: 1c3347950eb065c4687030b98cff40eb, type: 3}
+  - Id: special_rocket_horizontal
+    Sprite: {fileID: 21300000, guid: 35fc08fe62dd5e6418c3f608551318f5, type: 3}
+  - Id: special_rocket_vertical
+    Sprite: {fileID: 21300000, guid: cabff76e5df445d4c88417ee88038f77, type: 3}
+  - Id: rainbow_blast_orb
+    Sprite: {fileID: 21300000, guid: 8c22b3b43fe9e8743b1723aeed24b05b, type: 3}
+  - Id: rainbow_flower
+    Sprite: {fileID: 21300000, guid: d3d2e1ec9cd9deb48b2add8a89700bda, type: 3}
+  - Id: super_berry
+    Sprite: {fileID: 21300000, guid: e7aa0a4fcb34cad49872bd263df69f51, type: 3}
+  Blockers:
+  - Id: moss
+    Sprite: {fileID: 21300000, guid: e19fe82ed6b98e74ea70f90ee583b81a, type: 3}
+  - Id: covered_moss
+    Sprite: {fileID: 21300000, guid: 0790e1c9836582c4c981c158cd0b475f, type: 3}
+  - Id: ice_full
+    Sprite: {fileID: 21300000, guid: 904dc572dc502b34e91cd30165dfbe29, type: 3}
+  - Id: ice_cracked
+    Sprite: {fileID: 21300000, guid: cf6dd025c10c3464fa43832e04983665, type: 3}
+  - Id: vine_full
+    Sprite: {fileID: 21300000, guid: c48848c67ecf6884bb087c5a933ab992, type: 3}
+  - Id: vine_cut_01
+    Sprite: {fileID: 21300000, guid: 3da33beb9900dc34f96157f4a8627de8, type: 3}
+  - Id: pebble_full
+    Sprite: {fileID: 21300000, guid: 9b7e89f5957880944a0185483fbd08ef, type: 3}
+  - Id: pebble_cracked_01
+    Sprite: {fileID: 21300000, guid: f21dd5efc51a66b4d874883d88a67296, type: 3}
+  - Id: pebble_cracked_02
+    Sprite: {fileID: 21300000, guid: 72d763609801c8a4da1b6848e5deda8f, type: 3}
+  Objectives:
+  - Id: basket
+    Sprite: {fileID: 21300000, guid: 9adf11c6e9096714d943f411390b582a, type: 3}
+  - Id: honey_pot
+    Sprite: {fileID: 21300000, guid: c34d21ce34c39fd47b4a3788582f29a2, type: 3}
+  - Id: basket_full
+    Sprite: {fileID: 21300000, guid: bc649e8b38efd8f49a7f8269e3f68725, type: 3}
+  - Id: honey_pot_open
+    Sprite: {fileID: 21300000, guid: 15ca9f2f6a5fcb34d8b5e1388fac3c90, type: 3}
+  Boosters:
+  - Id: shovel
+    Sprite: {fileID: 21300000, guid: be4bb0a86e3c07b4b86fea02e62ae0e0, type: 3}
+  - Id: hammer
+    Sprite: {fileID: 21300000, guid: 50a4d157b178191479df839829b33e6d, type: 3}
+  - Id: magic_glove
+    Sprite: {fileID: 21300000, guid: 8ba8f969527938740b2169c5b96776f3, type: 3}
+  - Id: paint_brush
+    Sprite: {fileID: 21300000, guid: e536b8ed21c41ae489503f93935fdd2e, type: 3}

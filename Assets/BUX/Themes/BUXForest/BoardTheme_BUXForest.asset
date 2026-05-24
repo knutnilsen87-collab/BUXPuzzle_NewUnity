@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cb421d5005d504f8144c269e06ab90, type: 3}
+  m_Name: BoardTheme_BUXForest
+  m_EditorClassIdentifier: Assembly-CSharp::BUX.Themes.BoardThemeConfig
+  GameplayBackground: {fileID: 21300000, guid: acc7ce9e44fa1dd41bc3231122696b9a, type: 3}
+  BoardFrame: {fileID: 21300000, guid: 3180379bb055bbc4fad98ec39feca02b, type: 3}
+  BoardSurface: {fileID: 21300000, guid: 33b6a63acdcb8a143a5406637304b2fc, type: 3}
+  CellSlot: {fileID: 21300000, guid: 68b1d856d851e5546811ea761d3c4a7e, type: 3}
+  EmptyArea: {fileID: 21300000, guid: 40c3cc9f21e203d46a169bddb1da7baa, type: 3}
+  SelectionRing: {fileID: 0}
+  HintRing: {fileID: 0}
+  WorldBackgrounds:
+  - Id: berry_village
+    Sprite: {fileID: 21300000, guid: 7ca796c10c42f494da9e3fc8817f0ff5, type: 3}
+  - Id: mossy_forest
+    Sprite: {fileID: 21300000, guid: e74790836f5890b45bdd78318ca6c50d, type: 3}
+  - Id: honey_hills
+    Sprite: {fileID: 21300000, guid: abb73fe3a28e3cb488e48e8ee1392e07, type: 3}
+  - Id: magic_clearing
+    Sprite: {fileID: 21300000, guid: 9affe13c0e04dbb4bbeecf0e6c275a5f, type: 3}
+  - Id: moonlit_grove
+    Sprite: {fileID: 21300000, guid: 9143bc9318b00c446a40e2a922bfb203, type: 3}
+  - Id: crystal_garden
+    Sprite: {fileID: 21300000, guid: 23fe7640c4dbff34baafbe6fadd57f4f, type: 3}
+  BoardSkins:
+  - Id: challenge
+    Sprite: {fileID: 0}
+  - Id: event
+    Sprite: {fileID: 0}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6467514709c1b478841dc3eda52d9e, type: 3}
+  m_Name: AudioTheme_BUXForest
+  m_EditorClassIdentifier: Assembly-CSharp::BUX.Themes.AudioThemeConfig
+  MainMenuMusic: {fileID: 8300000, guid: f9c5bd3481a1b234bb90dba5e3872ef7, type: 3}
+  GameplayCalmMusic: {fileID: 8300000, guid: d50959dcf9b87444697168c84fbbe6c3, type: 3}
+  LevelMapMusic: {fileID: 8300000, guid: 2427bcbd1f4712c4a827619c618c4104, type: 3}
+  ForestAmbience: {fileID: 8300000, guid: 8e325afa139e4424a994d9e2651d30da, type: 3}
+  Sfx:
+  - Id: tile_select
+    Clip: {fileID: 8300000, guid: 5c270caf12d5f4e498775c6d11bcd095, type: 3}
+  - Id: tile_swap
+    Clip: {fileID: 8300000, guid: db2162fdd339a1d4a88170a9a3686f6a, type: 3}
+  - Id: invalid_swap
+    Clip: {fileID: 8300000, guid: d16040f773cb2b34b8a6bbf82b33e41f, type: 3}
+  - Id: board_shuffle
+    Clip: {fileID: 8300000, guid: bbbec8fbbf60f814783d1fa16e233fdb, type: 3}
+  - Id: board_hint
+    Clip: {fileID: 8300000, guid: ad8522541a5704441903171a08ba5726, type: 3}
+  - Id: level_start
+    Clip: {fileID: 8300000, guid: a32410547ee1ac440b8bb4556cb4295b, type: 3}
+  - Id: level_win
+    Clip: {fileID: 8300000, guid: b22795a5270f5154db701b1b2fd66b11, type: 3}
+  - Id: level_failed
+    Clip: {fileID: 8300000, guid: e338791c432c3bf4fa45ff8688043c42, type: 3}
+  - Id: objective_complete
+    Clip: {fileID: 8300000, guid: 25275c830b8f7724d8bd2050f012d75e, type: 3}
+  - Id: match_4_special_created
+    Clip: {fileID: 8300000, guid: 620241526aa83aa449df6bec2d2f6f0c, type: 3}
+  - Id: match_5_special_created
+    Clip: {fileID: 8300000, guid: ab1d639d4610d644da92c418e0854941, type: 3}
