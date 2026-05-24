@@ -369,6 +369,21 @@ When continuing work:
 14. WORK ROUND LOG
 ================================================================================
 
+## 2026-05-24 08:40 Europe/Oslo - github_initial_push_completed
+- Request: User asked to push the NewUnity project to GitHub.
+- GitHub remote: https://github.com/knutnilsen87-collab/BUXPuzzle_NewUnity.git
+- Change: Initialized git in `F:\prosjekter(MAIN)\BUXPuzzle_NewUnity`, added Unity-safe `.gitignore` and `.gitattributes`, committed the intended project files, and pushed branch `main`.
+- Commit pushed: `c9e72c0 Initial BUX Puzzle NewUnity project`
+- Branch: `main`
+- Validation:
+  - Confirmed `Library`, `Temp`, `Logs`, `UserSettings`, `Obj`, `Build`, and `Builds` were not staged.
+  - Confirmed largest tracked file was below GitHub's 100 MB per-file hard limit.
+  - Push to `origin/main` succeeded.
+- Limitation:
+  - GitHub CLI `gh` is not installed, so no PR was created.
+- Follow-up in same run:
+  - This status update should be committed and pushed as a small follow-up so GitHub has the current handoff status.
+
 ## 2026-05-24 05:18 Europe/Oslo - github_publish_prepared
 - Request: User asked to push this NewUnity project to https://github.com/knutnilsen87-collab/BUXPuzzle_NewUnity.git.
 - Change: Added Unity-safe .gitignore and .gitattributes before initializing git so generated folders such as Library, Temp, Logs, Obj, Build, Builds, and UserSettings are not committed.
